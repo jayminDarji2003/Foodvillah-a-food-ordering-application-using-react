@@ -1,0 +1,256 @@
+/* :root{
+    --bg-main:#3d9b6d;
+} */
+
+
+/* loader start  */
+
+.loaderContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.loaderContainer img {
+    width: 150px;
+    height: 150px;
+}
+
+/* loader end */
+
+
+/* main section start  */
+
+.restaurantContainer {
+    /* border: 1px solid black; */
+    border-top: none;
+    width: 70vw;
+    margin: auto;
+    margin-top: 25px;
+    padding: 50px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    border-top: 10px solid #3d9b6d;
+}
+
+/* main section end  */
+
+
+/* restaurant details start  */
+.restaurantDetails {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    height: 13vh;
+}
+
+.resData {
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.resData h2 {
+    margin-bottom: 5px;
+}
+
+.resData p {
+    font-size: 14px;
+    /* font-weight: 600; */
+    color: #7e808c;
+}
+
+
+.ratingData {
+    /* margin-top: 20px; */
+    border: 3px solid black;
+    border-radius: 20px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    padding: 20px;
+}
+
+.firstPara {
+    font-size: 20px;
+    font-weight: 900;
+    color: #3d9b6d;
+}
+
+.star {
+    color: #3d9b6d;
+}
+
+.newHr {
+    width: 90%;
+}
+
+.ratingCount {
+    font-size: 10px;
+    font-weight: 600;
+}
+
+/* restaurant details start  */
+
+
+/* delivery details start  */
+
+.restOtherDetails {
+    margin: 20px 0;
+}
+
+.deliveryData {
+    display: flex;
+    gap: 20px;
+}
+
+.ruppeIcon {
+    font-size: 12px;
+    border: 3px solid black;
+    padding: 3px;
+    border-radius: 50%;
+}
+
+.resAddress {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.address {
+    color: #7e808c;
+    font-size: 14px;
+}
+
+/* delivery details ends */
+
+
+/* offer section start  */
+
+.offers {
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.offerContainer {
+    border: 3px solid black;
+    height: 70px;
+    width: 450px;
+    padding: 8px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.offerContainer img {
+    height: 30px;
+    /* border-right: 2px solid black; */
+    padding-right: 8px;
+}
+
+.offerContainer h4 {
+    margin-left: 8px;
+}
+
+
+/* offer section ends  */
+
+/* button food start  */
+
+.checkOutItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px;
+    background-color: #3d9b6d;
+    width: 200px;
+    margin: auto;
+    margin-top: 60px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+/* button food end */
+
+
+/* food section starts  */
+
+.restaurantProductsList {
+    width: 70vw;
+    height: 100vh;
+    /* display: flex; */
+    margin: auto;
+    margin-top: 40px;
+    border: 1px solid black;
+    /* border-top: 10px solid #3d9b6d; */
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset; */
+}
+
+.restaurantProductsList img{
+    height: 300px;
+    width: 300px;
+}
+
+
+/* food section ends */
+
+
+/* Media query  */
+@media only screen and (max-width: 600px) {
+    .restaurantDetails {
+        height: 17vh;
+    }
+
+    .restaurantContainer {
+        border: none;
+        width: 100vw;
+        padding: 30px;
+        margin: 0px;
+    }
+
+    .deliveryData {
+        justify-content: center;
+    }
+
+    .resAddress {
+        flex-direction: column;
+    }
+
+    .offerContainer {
+        width: 320px;
+    }
+
+    .offers {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+
+    .searchContainer {
+        width: 80vw;
+        padding: 15px;
+    }
+
+    .searchContainer input {
+        width: 63vw;
+        height: 35px;
+    }
+
+    .restaurantProductsList {
+        width: 100%;
+        border: none;
+    }
+}
